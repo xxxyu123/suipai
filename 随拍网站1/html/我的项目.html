@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>随拍</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <link href="../css/我的项目.css" rel="stylesheet" media="all" />
+    <script>
+
+        $(document).ready(function () {
+            $("#gd").click(function () {
+                $(".display").toggle();
+            });
+            var flag1=1;
+            $(".box_1_").click(function(){
+                $(this).parent().siblings(".box_2").toggle();
+            
+                if($(this).parent().siblings(".box_2").css("display")=='none'){
+                    
+                    $(this).children(".img").attr("src","../img/xia.png")
+                }
+                else{
+                    $(this).children(".img").attr("src","../img/you.png")
+                }
+                
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="zy">
+        <div class="top">
+            <div class="lg">S</div>
+            <nav>
+                <ul class="main">
+                    <li>
+                        <a class="logo"></a>
+                    </li>
+                    <li>
+                        <a href="首页.html"
+                            style="font-size: 20px;font-weight: 600;letter-spacing: 1.2px;margin-top: 8px;">随拍</a>
+                    </li>
+                    <li><a href="首页.html" class="top_menu">首页</a></li>
+                    <li><a href="项目1.html" class="top_menu">项目</a></li>
+                    <li><a href="发现.html" class="top_menu">发现</a></li>
+                    <li class="box">
+                        <a class="dl" href="#"></a>
+
+                        <ul class="drop menu2">
+                            <li><a class="aaa" href="#">账号安全</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a class="aa" href="#">退出登录</a></li>
+                        </ul>
+
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="b_left">
+                <div class="ll">
+                    <div class="ll_top">抖音短视频</div>
+                    <div class="ll_mid">
+                        <div class="mid_1">
+                            <div class="font">详细介绍:</div>
+                            <textarea placeholder="××××××××××××××××××××××××××××××××××××××××××××××"></textarea>
+                        </div>
+                        <div class="mid_2">
+                            <div class="b_2">项目类别：××</div>
+                            <div class="b_2">项目类型：××</div>
+                            <div class="b_2">项目预算：××</div>
+
+                            <div class="b_2">地点：××</div>
+                            <div class="b_2">联系人：××</div>
+
+                            <div class="b_2">联系邮箱：××@××.com</div>
+                            <div class="b_2">企业认证：××</div>
+                            <div class="b_2">截止日期：××</div>
+                        </div>
+                    </div>
+                    <div class="ll_bottom" >
+                        <div class="font">应招人员列表：</div>
+                        <div class="box2">
+                            <div class="box_1">
+                                <div class="box_1_"  >
+                                    <div class="box_1_1">导演</div>
+                                    <img src="../img/you.png" class="img" />
+                                </div>
+                                
+                            </div>
+                            <div class="box_2">
+                                <div class="member">
+                                    <img src="../img/tx.jpg"  class="tx2">
+                                    <div class="xx">
+                                        <div class="xx_">昵称：两面包夹芝士</div>
+                                        <div class="xx_" >地区:珠海</div>
+                                    </div>
+                                    <button class="xd">选定</button>
+                                </div>
+                                <div class="member">
+                                    <img src="../img/tx.jpg"  class="tx2">
+                                    <div class="xx">
+                                        <div class="xx_">昵称：两面包夹芝士</div>
+                                        <div class="xx_" >地区:珠海</div>
+                                    </div>
+                                    <button class="xd">选定</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="box2">
+                            <div class="box_1">
+                                <div class="box_1_">
+                                    <div class="box_1_1">演员一</div>
+                                    <img src="../img/xia.png" class="img" />
+                                </div>
+                                
+                            </div>
+                            <div class="box_2" style="display: none;" >
+                                <div class="member">
+                                    <img src="../img/tx.jpg"  class="tx2">
+                                    <div class="xx">
+                                        <div class="xx_">昵称：两面包夹芝士</div>
+                                        <div class="xx_" >地区:珠海</div>
+                                    </div>
+                                    <!-- <button class="xd">选定</button> -->
+                                </div>
+                                <div class="member">
+                                    <img src="../img/tx.jpg"  class="tx2">
+                                    <div class="xx">
+                                        <div class="xx_">昵称：两面包夹芝士</div>
+                                        <div class="xx_" >地区:珠海</div>
+                                    </div>
+                                    <button class="xd">已选定</button>
+                                </div>
+                                <div class="member">
+                                    <img src="../img/tx.jpg"  class="tx2">
+                                    <div class="xx">
+                                        <div class="xx_">昵称：两面包夹芝士</div>
+                                        <div class="xx_" >地区:珠海</div>
+                                    </div>
+                                    <!-- <button class="xd">选定</button> -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="b_right">
+                <div class="rr">
+                    <div class="rr_1">管理</div>
+                    <div class="rr_2">
+                        <button class="rr_2_1">编辑信息</button>
+                        <div class="rr_2_2">
+                            <button class="rr_2_1" id="gd">更多</button>
+                            <div class="display">
+                                <div><button class="rr_2_1">关闭项目</button></div>
+                                <div><button class="rr_2_3">删除项目</button></div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

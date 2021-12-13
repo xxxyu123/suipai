@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>随拍</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <link href="../css/发布2.css" rel="stylesheet" media="all" />
+    <script>
+        $(document).ready(function(){
+            $('#tz1').click(function(){
+                window.location.href="发布1.html";
+            });
+            $('#tz2').click(function(){
+                window.location.href="发布3.html";
+            });
+            $('#tj').click(function(){
+               $('.rr').toggle();
+            });
+            $('#qd').click(function(){
+               
+               $('.rr').toggle();
+                        var value=$(".rr_2_2").val();
+                        var q=$("<div><div>").addClass("l_2_");
+                        var d1=$("<img src='../img/cy.png'/>").addClass("l_2_1");
+                        var d2=$("<div><div>").addClass("l_2_2");
+                        var d3=$("<button>邀请</button>").addClass("l_2_3");      
+                        var w= $(this).find(".l_2_2").text=value;       
+                         d2.append(w);
+                        
+                        q.append(d1);
+                        q.append(d2);
+                        q.append(d3);
+                        $("#tj").before(q);   
+                        $(".rr_2_2").val(null);         
+            });      
+        });
+    </script>
+</head>
+
+<body>
+    <div class="zy">
+        <div class="top">
+            <div class="lg">S</div>
+            <nav>
+                <ul class="main">
+                    <li>
+                        <a class="logo"></a>
+                    </li>
+                    <li>
+                        <a href="首页.html" style="font-size: 20px;font-weight: 600;letter-spacing: 1.2px;margin-top: 8px;">随拍</a>
+                    </li>
+                    <li><a href="首页.html" class="top_menu">首页</a></li>
+                    <li><a href="项目1.html" class="top_menu">项目</a></li>
+                    <li><a href="发现.html" class="top_menu">发现</a></li>
+                    <li  class="box" >
+                        <a class="dl" href="#"></a>
+                        
+                        <ul class="drop menu2">
+                                <li><a class="aaa" href="#">账号安全</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a class="aa" href="#">退出登录</a></li>
+                        </ul>
+                        
+                        
+                      </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="bb">
+                <div class="left">
+                    <div class="left_">
+                        <div class="l_1">请添加职位</div>
+                        <div class="l_2" style=" overflow-y: scroll"    >
+                            <div class="l_2_">
+                                <img src="../img/cy.png" class="l_2_1" />
+                                <div class="l_2_2">导演</div>
+                                <button class="l_2_3" id="yq">邀请</button>
+                            </div>
+                            <div class="l_2_">
+                                <img src="../img/cy.png" class="l_2_1" />
+                                <div class="l_2_2">灯光</div>
+                                <button class="l_2_3" id="yq">邀请</button>
+                            </div>
+                            <div class="l_2_">
+                                <img src="../img/cy.png" class="l_2_1" />
+                                <div class="l_2_2">摄影师</div>
+                                <button class="l_2_3" id="yq">邀请</button>
+                            </div>
+                            
+                            <a class="l_2_" id="tj">
+                                <img src="../img/tj.png" class="l_2_1" />
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="l_3">
+                        <button id="tz1" class="btn">返回</button>
+                        <button id="tz2" class="btn">下一步</button>
+                    </div>
+                    
+                </div>
+                <div class="right">
+                    <div class="rr">
+                        <img src="../img/tx.jpg" class="rr_1" />
+                        <div class="rr_2" >
+                            <div class="rr_2_1">请填写职位：</div>
+                            <input type="text" class="rr_2_2"  />
+                        </div>
+                        <div class="rr_2" >
+                            <div class="rr_2_1">请填写预算：</div>
+                            <input type="text" class="rr_2_2"  />
+                        </div>
+                        <div class="rr_2" >
+                            <div class="rr_2_1">请填写工期：</div>
+                            <input type="text" class="rr_2_2"  />
+                        </div>
+                        <div class="rr_2" >
+                            <div class="rr_2_1">请填写详细要求：</div>
+                            <input type="text" class="rr_2_2"   />
+                        </div>
+                        <button id="qd" class="btn_2">确定</button>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>随拍</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <link href="../css/发布1.css" rel="stylesheet" media="all" />
+    <script>
+        $(document).ready(function(){
+            $('#tz1').click(function(){
+                window.location.href="发布0.html";
+            });
+            $('#tz2').click(function(){
+                window.location.href="发布2.html";
+            });
+            
+        });
+    </script>
+</head>
+
+<body>
+    <div class="zy">
+        <div class="top">
+            <div class="lg">S</div>
+            <nav>
+                <ul class="main">
+                    <li>
+                        <a class="logo"></a>
+                    </li>
+                    <li>
+                        <a href="首页.html" style="font-size: 20px;font-weight: 600;letter-spacing: 1.2px;margin-top: 8px;">随拍</a>
+                    </li>
+                    <li><a href="首页.html" class="top_menu">首页</a></li>
+                    <li><a href="项目1.html" class="top_menu">项目</a></li>
+                    <li><a href="发现.html" class="top_menu">发现</a></li>
+                    <li  class="box" >
+                        <a class="dl" href="#"></a>
+                        
+                        <ul class="drop menu2">
+                                <li><a class="aaa" href="#">账号安全</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a class="aa" href="#">退出登录</a></li>
+                        </ul>
+                        
+                        
+                      </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="bo_body">
+                <div class="b_1">填写基本信息</div>
+                <div class="b_2" >项目名称：</div>
+                <input type="text" class="b_2_text" placeholder="例如：抖音短视频宣传片" >
+                <div class="b_2">项目详细说明：</div>
+                <textarea class="textarea" placeholder="请输入"></textarea>
+                <div class="b_2" style="margin-bottom: 30px;" >项目类型：</div>
+                <form action="" method="get"   > 
+                    <div class="form">
+                        <div class="label"><label ><input name="lx" type="radio" value=""  />广告片</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />宣传片</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />短视频</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />MV</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />微电影</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />记录片</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />采访</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />晚会</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />产品摄影</label> </div>
+                        <div class="label"><label><input name="lx" type="radio" value="" />人像摄影</label> </div>
+                        <div class="label" style="margin-bottom: 20px;"  ><label><input name="lx" type="radio" value="" />其他</label> </div>
+                    </div>
+                </form> 
+                <div class="b_2" style="display: flex;flex-direction: row;clear: both;align-items: center;" >
+                    <div class="b_2_1">预计工期:</div>
+                    <input type="text" class="b_2_text2" >
+                </div>
+                <div class="b_2" style="display: flex;flex-direction: row;clear: both;align-items: center;" >
+                    <div class="b_2_1">项目地点:</div>
+                    <input type="text" class="b_2_text2" >
+                </div>
+                <div class="b_2" style="display: flex;flex-direction: row;clear: both;align-items: center;" >
+                    <div class="b_2_1">项目预算:</div>
+                    <input type="text" class="b_2_text2" >
+                </div>
+                <div class="b_2" style="display: flex;flex-direction: row;clear: both;align-items: center;" >
+                    <div class="b_2_1">截止日期:</div>
+                    <input type="text" class="b_2_text2" >
+                </div>
+                <div class="b_2" style="display: flex;flex-direction: row;clear: both;align-items: center;" >
+                    <div class="b_2_1">联系邮箱:</div>
+                    <input type="text" class="b_2_text2" >
+                </div>
+
+                <div class="btn">
+                    <button id="tz1" class="btn_">取消</button>
+                    <button id="tz2" class="btn_">下一步</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
